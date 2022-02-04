@@ -1,6 +1,6 @@
 # pbars
 A rust crate for progress bars in the terminal.  
-[image](example_images/ss.png)
+![image](example_images/ss.png)
 ### Example:
 ```rust
 use pbars::{PBar, BarType};
