@@ -2,7 +2,14 @@
 name = "pbars"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Eric (Sk3pz) skepz.dev@gmail.com"]
+homepage = "https://crates.io/crates/pbars"
+repository = "https://github.com/sk3pz/pbars"
+documentation = "https://docs.rs/pbars/latest/pbars/index.html"
+license = "MIT"
+readme = "README.md"
+description = "A crate for creating progress bars quickly and easily"
 
 [dependencies]
+crossterm = { version="0.22.1", optional=true }
+better_term = "1.0.4"
