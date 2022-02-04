@@ -4,11 +4,16 @@ use crossterm::{cursor, execute};
 #[cfg(feature="crossterm")]
 use std::io::stdout;
 
+/// The Type of bar to be used
 #[derive(Debug, Clone)]
 pub enum BarType {
+    /// creates a bar that looks like "████████████████████"
     Bar,    // [██████████]
+    /// creates a bar that looks like "████████████████████"
     RawBar, // ██████
+    /// Cycles through ., .., and ...
     Dots,   // ...
+    /// Cycles through |, /, -, and \
     Line,   // |
 }
 
