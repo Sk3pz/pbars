@@ -1,6 +1,6 @@
 [package]
 name = "pbars"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Eric (Sk3pz) skepz.dev@gmail.com"]
 homepage = "https://crates.io/crates/pbars"
@@ -13,3 +13,6 @@ description = "A crate for creating progress bars quickly and easily"
 [dependencies]
 crossterm = { version="0.22.1", optional=true }
 better_term = "1.0.4"
+
+[features]
+default = ["crossterm"]
